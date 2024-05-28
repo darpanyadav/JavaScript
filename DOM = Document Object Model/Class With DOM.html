@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM With class</title>
+</head>
+<body>
+    <ol>
+        <li class="lists">One</li>
+        <li class="lists">Two</li>
+        <li class="lists">Three</li>
+        <li class="lists">Four</li>
+        <li class="lists">Five</li>
+        <li class="lists">Six</li>
+        <li class="lists">Seven</li>
+        <li class="lists">Eight</li>
+        <li class="lists">Nine</li>
+        <li class="lists">Ten</li>
+    </ol>
+</body>
+</html>
+
+<script>
+
+ 
+    var lists = document.getElementsByClassName('lists')
+    lists[1].style.backgroundColor="blue";
+
+    console.log(lists[0])
+
+
+</script>

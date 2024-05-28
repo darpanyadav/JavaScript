@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            padding: 20px;
+            border: none;
+        }
+        .margin{
+            margin-right: 20px;
+        }
+
+        .bord{
+            border: none;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="flex">
+        <h1 class="margin">Name : </h1>
+        <input type="text" placeholder="Enter Your Name" class="bord" id="name">
+        </div>
+
+        <div class="flex">
+            <h1 class="margin">Email : </h1>
+            <input type="email" placeholder="Enter Your Email" class="bord" id="email">
+        </div>
+
+        <div class="flex">
+            <h1 class="margin">Number :</h1>
+            <input type="number" placeholder="Enter Your Number" class="bord" id="number">
+        </div>
+
+        <div class="flex">
+            <h1  class="margin">Password :</h1>
+            <input type="password" placeholder="Enter Your Password" class="bord" id="pass">
+        </div>
+
+        <div class="flex">
+            <input type="submit" placeholder="submit">
+        </div>
+    </form>
+</body>
+</html>
+
+
+<script>
+    const myForm = document.querySelector('form')
+
+myForm.addEventListener('submit',function(e){
+    e.preventDefault()
+    const name = document.getElementById('name').value
+    const email = document.getElementById('email').value
+    const number = document.getElementById('number').value
+    const password = document.getElementById('pass').value
+
+    console.log(name)
+    console.log(email)
+    console.log(number)
+    console.log(password)
+})
+</script>

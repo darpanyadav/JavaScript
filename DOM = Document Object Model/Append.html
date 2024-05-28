@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+</html>
+
+
+<script>
+
+
+    let container = document.querySelector('#box')
+    container.style.border = '2px dotted black'
+    container.style.height = '350px'
+    container.style.width = '350px'
+
+    let head1 = document.createElement('h1')
+    head1.innerText = 'This Is Heading'
+    container.appendChild(head1)
+
+    let paragraph = document.createElement('p')
+    paragraph.innerText = 'Here Is The Paragraph'
+    container.appendChild(paragraph)
+</script>

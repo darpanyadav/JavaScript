@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.js">
+    <style>
+
+        #flex{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+                                                                                        /* This Is For Form Style  */
+
+        #myForm{
+            text-align: center;
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            margin-top: 20vh;
+            margin-left: 50px;
+            height: 100%;
+            box-shadow: 4px 4px 10px purple;
+        }
+        body{
+            display: flex;
+            margin: 10px;
+            background-color: #aab5f1;
+        }
+        h1{
+            text-align: center;
+            font-size: 25px;
+        }
+        select{
+            background-color: transparent;
+            box-shadow: 0px 0px 120px 10px rgb(192, 126, 192); 
+
+        }
+        input{
+            border: none;
+            text-align: center;
+            background-color: transparent;
+            box-shadow: 0px 0px 120px 5px rgb(194, 71, 194); 
+        }
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+        }
+        #submit{
+            margin-bottom: 20px;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(92, 69, 177);
+            box-shadow: 0px 0px 120px 5px rgb(211, 146, 211);
+        }
+
+        #exp{
+            width: 85px;
+        }
+        
+
+                                                                                             /* Now The Table Style */
+
+        table{
+            margin-top:80px;
+            margin-left: 50px;
+            width: auto;
+            border: 20px black;
+        }
+
+        #table{
+            width: 2000px;
+    
+        }
+
+        td{
+            background-color: aqua;
+            border: 10px solid #aab5f1da;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 1000px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            
+        }
+
+
+        #red{
+            background-color: rgb(255, 0, 0);
+            border: 10px solid #aab5f1e3;
+            border-radius: 10%;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 1000px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        #green{
+            background-color: rgb(0, 255, 21);
+            border: 10px solid #aab5f1cb;
+            border-radius: 10%;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 1000px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        
+        
+        #record{
+            font-weight: bolder;
+            font-size: 50px;
+            font-family: Fantasy;
+        }
+
+
+    </style>
+</head>
+<body><div id="flex">
+     <div id="myForm">
+        <form action="">
+            <h1>Employee </h1>
+            <input type="text" placeholder="Enter Your Name" id="name">
+            
+            <h1>Employee ID</h1>
+            <input type="number" placeholder="Enter Your ID Number" id="employeeID">
+
+            
+            <h1>Department</h1>
+            <select id="department">
+                <optgroup label="Select Department" ></optgroup>
+                <option>FrontEnd</option>
+                <option>BackEnd</option>
+                <option>HR</option>
+                <option>Head</option>
+            </select>
+
+            <h1>Employee Experience</h1>
+            <input type="number" placeholder="Experience" min="0" max="10" id="experience">
+
+            <h1>Employee Email</h1>
+            <input type="email" placeholder="Enter Email Address" id="email">
+
+            <h1>Employee Number</h1>
+            <input type="tel" id="phone" placeholder="Enter Mobile Number" pattern="[0-9]{10}"><br><br><br> 
+
+
+            <input id="submit" type="submit">
+        </form>
+    </div>
+
+
+
+
+    <div id="myTable">
+        <h1 id="record">E m p l o y e e &nbsp; &nbsp; R e c o r d s</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="blue">Name</td>
+                        <td class="blue">Employee Id</td>
+                        <td class="blue">Department</td>
+                        <td class="blue">Experience In Years</td>
+                        <td class="blue">Email Address</td>
+                        <td class="blue">Mobile Number</td>
+                        <td id="green">Role</td>
+                        <td id="red">Delete</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+    </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+<script src="project1.js"></script>

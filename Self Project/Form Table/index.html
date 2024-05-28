@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Local Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Form with Local Storage</h1>
+
+<form id="userForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Stored Data</h2>
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+    var myForm = document.getElementById('userForm')
+
+    myForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var age = document.getElementById('age').value;
+        var password = document.getElementById('password').value;
+
+        var userData =
+        {
+            Name : name,
+            Email : email,
+            Age : age,
+            Password : password
+        }
+
+        localStorage.setItem('userData', JSON.stringify(userData));
+        displayData();
+    });
+
+    function displayData() {
+        var storedData = JSON.parse(localStorage.getItem('userData'));
+        if (storedData) {
+            var tableBody = document.querySelector('#dataTable tbody');
+            tableBody.innerHTML = '<tr>' +
+                                  '<td>' + storedData.Name + '</td>' +
+                                  '<td>' + storedData.Email + '</td>' +
+                                  '<td>' + storedData.Age + '</td>' +
+                                  '<td>' + storedData.Password + '</td>' +
+                                  '</tr>';
+        }
+    }
+</script>
+
+</body>
+</html>

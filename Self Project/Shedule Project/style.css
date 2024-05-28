@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    background-color: rgb(226, 157, 157);
+    /* overflow: hidden; */
+}
+
+.set{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    margin-left: 60px;
+    height: 130px;
+    text-align: center;
+    border-radius: 80px;
+    width: 125px;
+    box-shadow: 0px 0px 100px 15px rgba(165, 42, 42, 0.532);
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 2px;
+    font-weight: bolder;
+
+}
+
+#flex{
+    display: flex;
+}
+
+table{
+    margin-top: 80px;
+}
+
+form{
+    border: 8px solid rgb(223, 154, 58);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 175px;
+    background-color: rgb(220, 190, 150);
+    text-align: center;
+    height: 900px;
+    width: 250px;
+}
+
+td{
+    border: 30px solid rgba(0, 0, 0, 0);
+    background-color: rgba(219, 169, 75, 0.651);
+    color: black;
+    border: 20px solid rgba(128, 128, 128, 0);
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.td{
+        border: 30px solid rgba(0, 0, 0, 0);
+        background-color: rgba(180, 105, 34, 0.651);
+        color: black;
+        border: 20px solid rgba(128, 128, 128, 0);
+        border-radius: 20px;
+        font-size: x-large;
+        text-align: center;
+        font-family: Fantasy;
+    }
+
+
+#submit{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 130px;
+    border: none;
+    text-align: center;
+    width: 130px;
+    background-color: rgb(92, 69, 177);
+    margin-left: 60px;
+}
+
+
+#top{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: rgb(70, 53, 221);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: #9281f1;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        }
+
+    #container{
+    background-color: rgb(236, 236, 236);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #title span{
+    font-size: 30px;
+    margin-bottom: 24px;
+    }
+
+    button{
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #5184f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+
+    #value{
+        margin: 20px;
+    }
+
+    button:hover{
+    background-color: #2d2ad7;
+    }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Cart</h1>
+        <div>
+            <button id="plus" onclick="add()">+</button>
+            <span id="value">0</span>
+            <button id="minus" onclick="remove()">-</button>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    count  = 0
+    function add() {
+        count++
+
+        let spanvalue = document.getElementById('value')
+        spanvalue.innerText = count
+        
+    } 
+
+    function remove(){
+        if(count < 0)
+        count--
+
+        let spanvaluen = document.getElementById('value')
+        spanvaluen.innerText = count
+        
+}
+    
+
+</script>

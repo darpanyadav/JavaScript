@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    <ol>
+        <li class="list">One</li>
+        <li class="list">Two</li>
+        <li class="list">Three</li>
+        <li class="list">Four</li>
+        <li class="list">Five</li>
+        <li class="list">Six</li>
+        <li class="list">Seven</li>
+        <li class="list">Eight</li>
+        <li class="list">Nine</li>
+        <li class="list">Ten</li>
+    </ol>
+
+    <ol>
+        <li id="list">One</li>
+        <li class="list">Two</li>
+        <li class="list">Three</li>
+        <li class="list">Four</li>
+        <li class="list">Five</li>
+        <li class="list">Six</li>
+        <li class="list">Seven</li>
+        <li class="list">Eight</li>
+        <li class="list">Nine</li>
+        <li class="list">Ten</li>
+    </ol>
+
+</body>
+</html>
+
+
+
+<script>
+
+    var lists = document.querySelectorAll('.list')
+    console.log(lists)
+    lists[5].style.color = 'red'
+
+    
+    // var lists = document.querySelectorAll('#list')
+    // console.log(lists)
+    // lists[0].style.color = 'red'
+
+</script>
